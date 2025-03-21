@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "file_path": "d:\\test\\pics\\2024-04-13_040844.jpg",
+  "output_path": "d:\\test\\pics\\2024-04-13_040844_q30_s33.jpg",
+  "quality": 30,
+  "scale_factor": 0.3333333333333333,
+  "timestamp": "2025-03-21T01:24:57.662888",
+  "processing_time": 5.787798881530762,
+  "payload": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful image capable model"
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describe the image. Make sure to list every object that can be recognized and the location of that object. If there is any writing, transcribe it separately."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/jpeg;base64,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"
+            }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 1024,
+    "temperature": 0.1,
+    "top_p": 1,
+    "top_k": 0,
+    "rep_pen": 1,
+    "min_p": 0.1
+  },
+  "response": "Here's a description of the image, broken down into objects and their locations, followed by a transcription of the text:\n\n**Objects and Locations:**\n\n*   **Website Header:** Top of the image - Contains the \"Le Creuset\" logo.\n*   **Product Image:** Center of the image - A stainless steel saucepan with a handle and knob.\n*   **Product Title:** Below the product image - \"5.5-Quart French Pot with Stainless Steel Liner\"\n*   **Price:** To the left of the product title - \"279.96\"\n*   **Sale Price:** Below the original price - \"FREE\"\n*   **Add to Cart Button:** Below the sale price - A red button with the text \"Add to Cart\".\n*   **Product Description:** To the right of the Add to Cart button - A section with details about the product.\n*   **Social Media Icons:** Bottom right corner - Icons for Facebook, Twitter, and Instagram.\n*   **Navigation Bar:** Bottom left corner - Icons for \"Sale\", \"New\", \"Shop by Category\", and \"About\".\n\n**Transcription of Text:**\n\n*   **Product Title:** 5.5-Quart French Pot with Stainless Steel Liner\n*   **Price:** 279.96\n*   **Sale Price:** FREE\n*   **Add to Cart Button:** Add to Cart\n*   **Navigation Bar Icons:** Sale, New, Shop by Category, About"
+}

@@ -1,0 +1,3 @@
+This script will use an openai compatible api (KoboldCpp) to query an image capable model. Given a directory with images it will query the LLM with each image at 100% quality and 100% scale starting at 896 pixels in any longest dimension, then drop quality down to 90%, 70%, 50%, 20%, and 10%. It will then scale the image to 2/3 and start over at 100% quality, dropping to 1/3 and then moving on the next image. It will save the response, full prompt includeing base64 image sent, and generation parameters into a json file. It will also combine the response with the picture side by side for visual evaluation.
+
+It also contains a powershell script that will consolidate the responses into json files for easier evaluation. 

@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "file_path": "d:\\test\\pics\\ct-illinois-license-plates-kamin-met-0316-20170315.jpg",
+  "output_path": "d:\\test\\pics\\ct-illinois-license-plates-kamin-met-0316-20170315_q10_s33.jpg",
+  "quality": 10,
+  "scale_factor": 0.3333333333333333,
+  "timestamp": "2025-03-21T01:34:45.437736",
+  "processing_time": 6.053954839706421,
+  "payload": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful image capable model"
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describe the image. Make sure to list every object that can be recognized and the location of that object. If there is any writing, transcribe it separately."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAFA3PEY8MlBGQUZaVVBfeMiCeG5uePWvuZHI////////////////////////////////////////////////////2wBDAVVaWnhpeOuCguv/////////////////////////////////////////////////////////////////////////wAARCACnASoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCDbRtq39mH96j7N/tVQiptpNtW/sx9RR9mPqKQFTbRtq19mb1FH2Z/agCrtpNtWvs7+1H2d/SgCrto21Z+zv6UeQ/92mBW20Yqx5D/AN2jyX/umgCvijbU/kt/dNHlN/dNAEGKTFT+U3900eWf7poAg20bam8s+ho2H0NAEO2jbU2z2pNlAEW2jbUu2jbQBFijFS7aNtAEW2kxU22k20ARYoxUu2jbQBFijFS7aNtAEWKMVLto20ARbaNtS7aNtAEW2jbUu2jbQBFtoxUu2jbQBo4oxSZpc0gDFGKM0ZoADgDJNRGbnjaPq2KS4chRiqdAF3zv9z/vujzv9z/vuqNJmgC/5/8Auf8AfdHn/wC5/wB91Qoo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AFf41IRSKu1cCoCZI2ySTQLclk/1Z+lMt/4qazvLwBx7VNGmxcd6B7IfTX+4fpULGRHzkmkaR5BtA/KgLC2/3j9KnIpkSbF9zUbSSI/PI/SgT1ZK/wB0/SoYB8x+lK8xcbQMZp8KbRk9TQFrIavf61Vf75+tWl6VUb7x+tAgopKKAFopKKACiiigAooooGSQ/fqcHac1Xh+/UxbmgQpaHPJbPejdD1G+oAu+XaO5q3O3lwkDvwKAIjJD/tUebF6NVaigC2pV+VVjil89RxhuKhil2LjOKtJ8se48dzQAwXC9w35Uv2iP0b8qr/aZPb8qPtMnqPyoAn+0R+jflR9oj/2vyp8bHywz9cZpkAyGkPVjn8KAA3EfvR9oj9/yoLNk4kjxRuf/AJ6R0AH2iP3/ACpftEXqfyprO6qT5kZx7UqGVkDEoM+1AC/aIvU/lR9oi9T+VJub/npF+VG5v+ekX5UAL9oj9TR58Xqfypw+4Sdr/QVFbJwXx16UAO8+P1P5Uv2iP1NDM2TtePHvSZf+/FQAvnxnufyo86MHnI/Cml2Xkuhx6U5S7jKlfxGaAF8+L+8fypDNEf4v0pcS+qflSZf+9FQAgliHQ/pThKjcKcmkLIF/eFCfQCq8P3zQBP0FUz1NWyeDVOgAooooGFFFFABRRRQAUUUUAKp2tmpgQeagooAmjOyQtgH05qQz7usan6mqtFAix5q/88k/OjzR/wA8kqvRQBO7hsfIgwc8U83BIwUUj61VooAseav/ADyT86PMX/nkn51WooAsyTM6FcKM+9OE5C42LjGPvVUpaBljev8AzxT86N6f88U/Oq9FAEzkMABGq/Q1J5/GNgx6bqq0lAFnen/PFPzo3p/zxT86rUUAWWmbbtQKo+tOWbaoUIMAY+9VSigRZ3p/zxT86N6f88U/Oq1FAE7kMAFRV9waYFYHgj86jooGWFklX+IH6mnGXcPniU/jVWigCZgp+6hU/wC9SxDaTmoKWgCeSQAdeagpKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlooASilooASilooASiiloASilooASilooASilooASilooASilooASilpKACiiigAooooAKKWigApKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
+            }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 1024,
+    "temperature": 0.1,
+    "top_p": 1,
+    "top_k": 0,
+    "rep_pen": 1,
+    "min_p": 0.1
+  },
+  "response": "Here's a description of the image, broken down into objects and their locations, followed by a transcription of the writing:\n\n**Objects and Locations:**\n\n*   **License Plate:** The primary object, located in the center of the image. It\u2019s mounted on the front of a vehicle.\n*   **Vehicle:** The license plate is attached to the front of a vehicle, appearing to be a silver or gray car. The front of the car is visible, including the bumper and a portion of the hood.\n*   **License Plate Border:** A white border surrounds the license plate.\n*   **State Designations:** A blue design with a stylized image of a mountain range is in the background of the license plate.\n*   **License Plate Numbers:** The numbers \"AG\" and \"23353\" are printed in red on the license plate.\n*   **Loeber Logo:** The word \"Loeber\" is printed in red at the bottom of the license plate.\n*   **Loeber Website:** The website \"LoeberMotors.com\" is printed in black at the top of the license plate.\n*   **Shadow/Reflection:** A shadow or reflection of the license plate is visible on the lower portion of the image, likely from the car's bumper.\n\n**Transcription of Writing:**\n\n*   LoeberMotors.com\n*   AG\n*   23353\n*   Loeber"
+}
