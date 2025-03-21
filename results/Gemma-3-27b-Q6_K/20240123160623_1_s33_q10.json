@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "file_path": "d:\\test\\pics\\20240123160623_1.jpg",
+  "output_path": "d:\\test\\pics\\20240123160623_1_q10_s33.jpg",
+  "quality": 10,
+  "scale_factor": 0.3333333333333333,
+  "timestamp": "2025-03-21T06:32:47.756654",
+  "processing_time": 32.22041082382202,
+  "payload": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful image capable model"
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describe the image. Make sure to list every object that can be recognized and the location of that object. If there is any writing, transcribe it separately."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAFA3PEY8MlBGQUZaVVBfeMiCeG5uePWvuZHI////////////////////////////////////////////////////2wBDAVVaWnhpeOuCguv/////////////////////////////////////////////////////////////////////////wAARCACnASoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwClS0lFAEqyKI2UrknvSF1xgL2qOilYBwbBz1pS4I+6AfWmUUwHqwHXmlLrtwF59ajooAkDqEwVyc5zTWbJJAwPSm0UASFwWBKjAGMUgYBskZGelMooAlMilidgx2pFcBidufSo6KAHlgRwMe9KJAExtBPrUdFADy4JGFxj9acZFJyEAHpUVFADw6hiSvHp6UpdcEBfoc1HRQA8OApGMk9zQWBPAxTKKAHhxxkZpCwJyBgelNooAkLqei9qaCM8802loAduGCMfjShwEIK5J70ykoAezA9F204yLxhOBUVFADywJPGB6U4yKWJ2cHtUVFAEiuFJJGfT2o3rjGwZ9c1HRQA8MNpGOfWmk5pKKACiiigApaSl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"
+            }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 1024,
+    "temperature": 0.1,
+    "top_p": 1,
+    "top_k": 0,
+    "rep_pen": 1,
+    "min_p": 0.1
+  },
+  "response": "Here's a description of the image:\n\n**Overall Impression:**\n\nThe image appears to be a screenshot from a video game, likely a role-playing game (RPG) due to the character stats and interface elements. The scene is dimly lit, with a focus on a character in ornate armor.\n\n**Objects and Locations:**\n\n*   **Character:** A character stands prominently in the center of the image. They are wearing elaborate, dark-colored armor with a feathered helmet. The character is holding a long, slender weapon (possibly a sword or lance) in their hands.\n*   **Background:** The background is dark and indistinct, suggesting an indoor setting like a castle hall or a dimly lit chamber. There are hints of architectural details, but they are not clearly defined.\n*   **Interface Elements:**\n    *   **Health Bar:** A horizontal bar at the bottom of the image, likely representing the character's health. It is segmented into different colors (yellow, blue, red).\n    *   **Stats/Text Box:** A rectangular box on the right side of the image contains text, presumably describing the character or the current situation in the game.\n    *   **Menu/UI Elements:** A thin bar at the very top of the image contains small icons and text, likely representing game menus or options.\n    *   **Small Character Portrait:** A small character portrait is visible on the left side of the image.\n\n**Writing/Text Transcription:**\n\nThe text in the box on the right side of the image reads:\n\n\"What will you do?\n\nYou have encountered a powerful, dark knight guarding the entrance to the castle. He is known for his strength and ruthlessness.\n\nOptions:\n\n1.  Attack the knight\n2.  Attempt to reason with him\n3.  Sneak past him\n4.  Flee\"\n\nLet me know if you would like a more detailed description of any specific part of the image!"
+}

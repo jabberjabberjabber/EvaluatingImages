@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "file_path": "d:\\test\\pics\\2024-04-13_040844.jpg",
+  "output_path": "d:\\test\\pics\\2024-04-13_040844_q30_s33.jpg",
+  "quality": 30,
+  "scale_factor": 0.3333333333333333,
+  "timestamp": "2025-03-21T06:02:30.650554",
+  "processing_time": 41.09346127510071,
+  "payload": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful image capable model"
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describe the image. Make sure to list every object that can be recognized and the location of that object. If there is any writing, transcribe it separately."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/jpeg;base64,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"
+            }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 1024,
+    "temperature": 0.1,
+    "top_p": 1,
+    "top_k": 0,
+    "rep_pen": 1,
+    "min_p": 0.1
+  },
+  "response": "Here's a description of the image:\n\n**Overall Impression:**\n\nThe image is a product page screenshot from a website, likely an online retailer. It features a stainless steel saucepan as the primary product. The background is a clean white, typical of e-commerce sites.\n\n**Objects and Locations:**\n\n*   **Saucepan:** Located in the center-left of the image. It's a stainless steel saucepan with a long handle. It has a lid and appears to be a high-quality cooking pot.\n*   **Website Header:** At the very top of the image, spanning the width. It includes a logo on the left and some icons on the right.\n*   **Search Bar:** Below the header, in the center. It's a rectangular bar with the placeholder text \"Search\".\n*   **Product Information:** To the right of the saucepan. This includes the product name, price, and other details.\n*   **Icons:** Located on the right side of the header. There are two icons, one red and one with a shopping cart.\n*   **Product Details Section:** Located on the right side of the saucepan. This section contains bullet points describing the features of the saucepan.\n*   **Add to Cart Button:** Located below the product details section. It's a red button with white text.\n\n**Text Transcription:**\n\nHere's the text visible in the image:\n\n*   **Logo:** \"ALL-CLAD\"\n*   **Search Bar Placeholder:** \"Search\"\n*   **Product Name:** \"ALL-CLAD D3 Stainless Steel Fry Pan, 10-Inch\"\n*   **Price:** \"$199.95\"\n*   **Sale Price:** \"$159.95\"\n*   **Text under price:** \"Save $40\"\n*   **Bullet Points (Product Details):**\n    *   \"D3 Stainless Steel Fry Pan, 10-Inch\"\n    *   \"Stainless Steel\"\n    *   \"Dishwasher Safe\"\n    *   \"Oven Safe\"\n    *   \"Stovetop Safe\"\n*   **Button Text:** \"Add to Cart\"\n*   **Text under Add to Cart Button:** \"Only 1 left\"\n*   **Text at the bottom:** \"Shipping & Returns\"\n*   **Text at the bottom:** \"Customer Reviews\"\n\nLet me know if you'd like a more detailed description of any specific part of the image!"
+}
