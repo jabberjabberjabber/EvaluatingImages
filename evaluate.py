@@ -15,8 +15,10 @@ class ImageProcessor:
     def __init__(self, max_dimension=896):
         self.max_dimension = max_dimension
         
-    def process_image(self, file_path, quality=100, scale_factor=1.0):
+    def process_image(self, file_path, quality=100, scale_factor=1.0, do_high=False):
         try:
+            if do_high:
+                self.max_dimension = 999999
             # Create output directory if it doesn't exist
             output_dir = os.path.dirname(file_path)
             os.makedirs(output_dir, exist_ok=True)
@@ -77,12 +79,13 @@ class LLMProcessor:
         self.system_instruction = "You are a helpful image capable model"
         self.instruction = "Describe the image. Make sure to list every object that can be recognized and the location of that object. If there is any writing, transcribe it separately."
         
-    def process_file(self, file_path, quality=100, scale_factor=1.0):
+    def process_file(self, file_path, quality=100, scale_factor=1.0, do_high=False):
         start_time = time.time()
         image_base64, output_path = self.image_processor.process_image(
             file_path, 
             quality=quality,
-            scale_factor=scale_factor
+            scale_factor=scale_factor,
+            do_high=do_high
         )
         
         if not image_base64:
@@ -293,13 +296,13 @@ def create_side_by_side_image(original_path, result, output_dir):
         print(f"Error creating side-by-side image: {str(e)}")
         return None
 
-def run_full_quality_cycle(file_path, api_url, api_password, output_dir, scale_factor):
+def run_full_quality_cycle(file_path, api_url, api_password, output_dir, scale_factor, do_high):
     """Run a full quality reduction cycle for a specific scale factor"""
     processor = LLMProcessor(api_url, api_password)
     
     # Get scale string for display
-    if scale_factor == 1.0:
-        scale_str = "original (896px)"
+    if scale_factor == 1.0 or do_high:
+        scale_str = "original"
     else:
         effective_dimension = int(896 * scale_factor)
         scale_str = f"{int(scale_factor*100)}% ({effective_dimension}px)"
@@ -308,10 +311,11 @@ def run_full_quality_cycle(file_path, api_url, api_password, output_dir, scale_f
     
     # Process with all quality levels
     for quality in [100, 90, 70, 50, 30, 10]:
+        
         print(f"  Processing quality: {quality}%")
         
         # Process the file
-        result = processor.process_file(file_path, quality=quality, scale_factor=scale_factor)
+        result = processor.process_file(file_path, quality=quality, scale_factor=scale_factor, do_high=do_high)
         
         if result["success"]:
             # Create filename for JSON output
@@ -337,6 +341,8 @@ def run_full_quality_cycle(file_path, api_url, api_password, output_dir, scale_f
             # Create side-by-side image
             side_by_side_path = create_side_by_side_image(file_path, result, output_dir)
             print(f"    Created: {os.path.basename(side_by_side_path) if side_by_side_path else 'Failed'}")
+            if do_high:
+                break
         else:
             print(f"    Failed: {result.get('error', 'Unknown error')}")
 
@@ -346,9 +352,13 @@ def main():
     parser.add_argument("--api-url", default="http://localhost:5001", help="LLM API URL")
     parser.add_argument("--api-password", default="", help="LLM API password/token")
     parser.add_argument("--output-dir", help="Output directory (default: <input_dir>_results)")
-    
+    parser.add_argument("--do-high", action="store_true", help="Run the image at the native resoultion only")
     args = parser.parse_args()
-    
+    if args.do_high:
+        do_high = True
+    else:
+        do_high = False
+        
     # Validate input directory
     if not os.path.isdir(args.dir):
         print(f"Error: {args.dir} is not a valid directory")
@@ -384,7 +394,9 @@ def main():
             
             for scale in scales:
                 # For each scale, run full quality cycle
-                run_full_quality_cycle(file_path, args.api_url, args.api_password, args.output_dir, scale)
+                run_full_quality_cycle(file_path, args.api_url, args.api_password, args.output_dir, scale, do_high)
+                if do_high:
+                    break
                 
         except Exception as e:
             print(f"Error processing {file_path}: {str(e)}")
